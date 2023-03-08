@@ -689,7 +689,7 @@
 					"$(inherited)",
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
-					"$(PROJECT_DIR)/WSIpaManager/theos",
+					"$(PROJECT_DIR)/WSIpaManager/WSTheos",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libWSIpaHookToolDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -702,7 +702,7 @@
 					"$(MonkeyDevTheosPath)/vendor/lib/**",
 				);
 				MonkeyDevPath = "${PROJECT_DIR}/WSIpaManager";
-				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/theos";
+				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/WSTheos";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTHEOS_INSTANCE_NAME=\"\\\"WSIpaHookToolDylib\\\"\"",
@@ -752,7 +752,7 @@
 					"$(inherited)",
 					"$(MonkeyDevPath)/include",
 					"$(MonkeyDevTheosPath)/vendor/include/**",
-					"$(PROJECT_DIR)/WSIpaManager/theos",
+					"$(PROJECT_DIR)/WSIpaManager/WSTheos",
 				);
 				INSTALL_PATH = "@executable_path/Frameworks/libWSIpaHookToolDylib.dylib";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -765,7 +765,7 @@
 					"$(MonkeyDevTheosPath)/vendor/lib/**",
 				);
 				MonkeyDevPath = "${PROJECT_DIR}/WSIpaManager";
-				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/theos";
+				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/WSTheos";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DTHEOS_INSTANCE_NAME=\"\\\"WSIpaHookToolDylib\\\"\"",
