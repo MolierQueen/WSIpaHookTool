@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33DBAE55ACBA37EA8A97B78D /* libPods-WSIpaHookToolDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34A8BFC0D1010B33333DA8A /* libPods-WSIpaHookToolDylib.a */; };
+		4863B17A90099361A8754D54 /* libPods-WSIpaHookTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75666F48C09540285E2E79 /* libPods-WSIpaHookTool.a */; };
+		87DDBF0529B865A200A5891B /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87DDBF0429B865A200A5891B /* MDConfig.plist */; };
+		87DDBF0F29B865A200A5891B /* libWSIpaHookToolDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87DDBF0E29B865A200A5891B /* libWSIpaHookToolDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		87DDBF1429B865A200A5891B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDBF1329B865A200A5891B /* JavaScriptCore.framework */; };
+		87DDBF1629B865A200A5891B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDBF1529B865A200A5891B /* Foundation.framework */; };
+		87DDBF1829B865A200A5891B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDBF1729B865A200A5891B /* UIKit.framework */; };
+		87DDBF1D29B865A200A5891B /* WSIpaHookToolDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF1C29B865A200A5891B /* WSIpaHookToolDylib.mm */; };
+		87DDBF2029B865A200A5891B /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF1F29B865A200A5891B /* MDConfigManager.h */; };
+		87DDBF2229B865A200A5891B /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF2129B865A200A5891B /* MDConfigManager.m */; };
+		87DDBF2429B865A200A5891B /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF2329B865A200A5891B /* MDCycriptManager.h */; };
+		87DDBF2629B865A200A5891B /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF2529B865A200A5891B /* MDCycriptManager.m */; };
+		87DDBF2829B865A200A5891B /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF2729B865A200A5891B /* MDMethodTrace.h */; };
+		87DDBF2A29B865A200A5891B /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF2929B865A200A5891B /* MDMethodTrace.m */; };
+		87DDBF2D29B865A200A5891B /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF2C29B865A200A5891B /* a1a2-selectortramps-arm.s */; };
+		87DDBF2F29B865A200A5891B /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF2E29B865A200A5891B /* a1a2-selectortramps-arm64.s */; };
+		87DDBF3129B865A200A5891B /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3029B865A200A5891B /* a1a2-selectortramps-i386.s */; };
+		87DDBF3329B865A200A5891B /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3229B865A200A5891B /* a1a2-selectortramps-x86_64.s */; };
+		87DDBF3529B865A200A5891B /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3429B865A200A5891B /* a2a3-selectortramps-arm.s */; };
+		87DDBF3729B865A200A5891B /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3629B865A200A5891B /* a2a3-selectortramps-i386.s */; };
+		87DDBF3929B865A200A5891B /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3829B865A200A5891B /* a2a3-selectortramps-x86_64.s */; };
+		87DDBF3B29B865A200A5891B /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF3A29B865A200A5891B /* OCMethodTrace.h */; };
+		87DDBF3D29B865A200A5891B /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF3C29B865A200A5891B /* OCMethodTrace.m */; };
+		87DDBF3F29B865A200A5891B /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF3E29B865A200A5891B /* OCSelectorTrampolines.h */; };
+		87DDBF4129B865A300A5891B /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF4029B865A300A5891B /* OCSelectorTrampolines.mm */; };
+		87DDBF4529B865A300A5891B /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF4429B865A300A5891B /* LLDBTools.h */; };
+		87DDBF4729B865A300A5891B /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF4629B865A300A5891B /* LLDBTools.mm */; };
+		87DDBF4C29B865A300A5891B /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF4B29B865A300A5891B /* AntiAntiDebug.m */; };
+		87DDBF4F29B865A300A5891B /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF4E29B865A300A5891B /* fishhook.c */; };
+		87DDBF5129B865A300A5891B /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF5029B865A300A5891B /* fishhook.h */; };
+		87DDBF5329B865A300A5891B /* WSIpaHookToolDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 87DDBF5229B865A300A5891B /* WSIpaHookToolDylib.h */; };
+		87DDBF5529B865A300A5891B /* WSIpaHookToolDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DDBF5429B865A300A5891B /* WSIpaHookToolDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87DDBF1029B865A200A5891B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87DDBEF229B865A200A5891B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87DDBF0D29B865A200A5891B;
+			remoteInfo = WSIpaHookToolDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87DDBEFA29B865A200A5891B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				87DDBF0F29B865A200A5891B /* libWSIpaHookToolDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F21C54BD30842A3CD756CF1 /* Pods-WSIpaHookTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSIpaHookTool.release.xcconfig"; path = "Target Support Files/Pods-WSIpaHookTool/Pods-WSIpaHookTool.release.xcconfig"; sourceTree = "<group>"; };
+		87DDBEFD29B865A200A5891B /* WSIpaHookTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSIpaHookTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DDBF0029B865A200A5891B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		87DDBF0229B865A200A5891B /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
+		87DDBF0429B865A200A5891B /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MDConfig.plist; sourceTree = "<group>"; };
+		87DDBF0829B865A200A5891B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DDBF0E29B865A200A5891B /* libWSIpaHookToolDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libWSIpaHookToolDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DDBF1329B865A200A5891B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		87DDBF1529B865A200A5891B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		87DDBF1729B865A200A5891B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		87DDBF1B29B865A200A5891B /* WSIpaHookToolDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = WSIpaHookToolDylib.xm; sourceTree = "<group>"; };
+		87DDBF1C29B865A200A5891B /* WSIpaHookToolDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WSIpaHookToolDylib.mm; sourceTree = "<group>"; };
+		87DDBF1F29B865A200A5891B /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDConfigManager.h; sourceTree = "<group>"; };
+		87DDBF2129B865A200A5891B /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDConfigManager.m; sourceTree = "<group>"; };
+		87DDBF2329B865A200A5891B /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCycriptManager.h; sourceTree = "<group>"; };
+		87DDBF2529B865A200A5891B /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDCycriptManager.m; sourceTree = "<group>"; };
+		87DDBF2729B865A200A5891B /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDMethodTrace.h; sourceTree = "<group>"; };
+		87DDBF2929B865A200A5891B /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDMethodTrace.m; sourceTree = "<group>"; };
+		87DDBF2C29B865A200A5891B /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		87DDBF2E29B865A200A5891B /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		87DDBF3029B865A200A5891B /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		87DDBF3229B865A200A5891B /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		87DDBF3429B865A200A5891B /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		87DDBF3629B865A200A5891B /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		87DDBF3829B865A200A5891B /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = "a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		87DDBF3A29B865A200A5891B /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCMethodTrace.h; sourceTree = "<group>"; };
+		87DDBF3C29B865A200A5891B /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCMethodTrace.m; sourceTree = "<group>"; };
+		87DDBF3E29B865A200A5891B /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		87DDBF4029B865A300A5891B /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		87DDBF4229B865A300A5891B /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; path = selectortramps.mac; sourceTree = "<group>"; };
+		87DDBF4429B865A300A5891B /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLDBTools.h; sourceTree = "<group>"; };
+		87DDBF4629B865A300A5891B /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LLDBTools.mm; sourceTree = "<group>"; };
+		87DDBF4929B865A300A5891B /* WSIpaHookToolDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WSIpaHookToolDylib-Prefix.pch"; path = "../WSIpaHookToolDylib-Prefix.pch"; sourceTree = "<group>"; };
+		87DDBF4B29B865A300A5891B /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AntiAntiDebug.m; sourceTree = "<group>"; };
+		87DDBF4E29B865A300A5891B /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		87DDBF5029B865A300A5891B /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		87DDBF5229B865A300A5891B /* WSIpaHookToolDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSIpaHookToolDylib.h; sourceTree = "<group>"; };
+		87DDBF5429B865A300A5891B /* WSIpaHookToolDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSIpaHookToolDylib.m; sourceTree = "<group>"; };
+		916B26AA35FA5DF2359A057F /* Pods-WSIpaHookTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSIpaHookTool.debug.xcconfig"; path = "Target Support Files/Pods-WSIpaHookTool/Pods-WSIpaHookTool.debug.xcconfig"; sourceTree = "<group>"; };
+		9F75666F48C09540285E2E79 /* libPods-WSIpaHookTool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSIpaHookTool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34A8BFC0D1010B33333DA8A /* libPods-WSIpaHookToolDylib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WSIpaHookToolDylib.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2D6036319821E78E8214127 /* Pods-WSIpaHookToolDylib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSIpaHookToolDylib.debug.xcconfig"; path = "Target Support Files/Pods-WSIpaHookToolDylib/Pods-WSIpaHookToolDylib.debug.xcconfig"; sourceTree = "<group>"; };
+		FE3569E2DDCE187C9A283CB4 /* Pods-WSIpaHookToolDylib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSIpaHookToolDylib.release.xcconfig"; path = "Target Support Files/Pods-WSIpaHookToolDylib/Pods-WSIpaHookToolDylib.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87DDBEF729B865A200A5891B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4863B17A90099361A8754D54 /* libPods-WSIpaHookTool.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DDBF0B29B865A200A5891B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDBF1429B865A200A5891B /* JavaScriptCore.framework in Frameworks */,
+				87DDBF1829B865A200A5891B /* UIKit.framework in Frameworks */,
+				87DDBF1629B865A200A5891B /* Foundation.framework in Frameworks */,
+				33DBAE55ACBA37EA8A97B78D /* libPods-WSIpaHookToolDylib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31C45598EBAEA07D0A65CB70 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				916B26AA35FA5DF2359A057F /* Pods-WSIpaHookTool.debug.xcconfig */,
+				7F21C54BD30842A3CD756CF1 /* Pods-WSIpaHookTool.release.xcconfig */,
+				F2D6036319821E78E8214127 /* Pods-WSIpaHookToolDylib.debug.xcconfig */,
+				FE3569E2DDCE187C9A283CB4 /* Pods-WSIpaHookToolDylib.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87DDBEF129B865A200A5891B = {
+			isa = PBXGroup;
+			children = (
+				87DDBEFF29B865A200A5891B /* WSIpaHookTool */,
+				87DDBF1929B865A200A5891B /* WSIpaHookToolDylib */,
+				87DDBF1229B865A200A5891B /* Frameworks */,
+				87DDBEFE29B865A200A5891B /* Products */,
+				31C45598EBAEA07D0A65CB70 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		87DDBEFE29B865A200A5891B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBEFD29B865A200A5891B /* WSIpaHookTool.app */,
+				87DDBF0E29B865A200A5891B /* libWSIpaHookToolDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87DDBEFF29B865A200A5891B /* WSIpaHookTool */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF0029B865A200A5891B /* icon.png */,
+				87DDBF0829B865A200A5891B /* Info.plist */,
+				87DDBF0129B865A200A5891B /* Scripts */,
+				87DDBF0329B865A200A5891B /* Config */,
+				87DDBF0629B865A200A5891B /* TargetApp */,
+			);
+			path = WSIpaHookTool;
+			sourceTree = "<group>";
+		};
+		87DDBF0129B865A200A5891B /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF0229B865A200A5891B /* quick-resign.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		87DDBF0329B865A200A5891B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF0429B865A200A5891B /* MDConfig.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		87DDBF0629B865A200A5891B /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TargetApp;
+			sourceTree = "<group>";
+		};
+		87DDBF1229B865A200A5891B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF1329B865A200A5891B /* JavaScriptCore.framework */,
+				87DDBF1529B865A200A5891B /* Foundation.framework */,
+				87DDBF1729B865A200A5891B /* UIKit.framework */,
+				9F75666F48C09540285E2E79 /* libPods-WSIpaHookTool.a */,
+				B34A8BFC0D1010B33333DA8A /* libPods-WSIpaHookToolDylib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87DDBF1929B865A200A5891B /* WSIpaHookToolDylib */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF5229B865A300A5891B /* WSIpaHookToolDylib.h */,
+				87DDBF5429B865A300A5891B /* WSIpaHookToolDylib.m */,
+				87DDBF1A29B865A200A5891B /* Logos */,
+				87DDBF1E29B865A200A5891B /* Config */,
+				87DDBF2B29B865A200A5891B /* Trace */,
+				87DDBF4329B865A300A5891B /* Tools */,
+				87DDBF4A29B865A300A5891B /* AntiAntiDebug */,
+				87DDBF4D29B865A300A5891B /* fishhook */,
+				87DDBF4829B865A300A5891B /* Supporting Files */,
+			);
+			path = WSIpaHookToolDylib;
+			sourceTree = "<group>";
+		};
+		87DDBF1A29B865A200A5891B /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF1B29B865A200A5891B /* WSIpaHookToolDylib.xm */,
+				87DDBF1C29B865A200A5891B /* WSIpaHookToolDylib.mm */,
+			);
+			path = Logos;
+			sourceTree = "<group>";
+		};
+		87DDBF1E29B865A200A5891B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF1F29B865A200A5891B /* MDConfigManager.h */,
+				87DDBF2129B865A200A5891B /* MDConfigManager.m */,
+				87DDBF2329B865A200A5891B /* MDCycriptManager.h */,
+				87DDBF2529B865A200A5891B /* MDCycriptManager.m */,
+				87DDBF2729B865A200A5891B /* MDMethodTrace.h */,
+				87DDBF2929B865A200A5891B /* MDMethodTrace.m */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		87DDBF2B29B865A200A5891B /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF2C29B865A200A5891B /* a1a2-selectortramps-arm.s */,
+				87DDBF2E29B865A200A5891B /* a1a2-selectortramps-arm64.s */,
+				87DDBF3029B865A200A5891B /* a1a2-selectortramps-i386.s */,
+				87DDBF3229B865A200A5891B /* a1a2-selectortramps-x86_64.s */,
+				87DDBF3429B865A200A5891B /* a2a3-selectortramps-arm.s */,
+				87DDBF3629B865A200A5891B /* a2a3-selectortramps-i386.s */,
+				87DDBF3829B865A200A5891B /* a2a3-selectortramps-x86_64.s */,
+				87DDBF3A29B865A200A5891B /* OCMethodTrace.h */,
+				87DDBF3C29B865A200A5891B /* OCMethodTrace.m */,
+				87DDBF3E29B865A200A5891B /* OCSelectorTrampolines.h */,
+				87DDBF4029B865A300A5891B /* OCSelectorTrampolines.mm */,
+				87DDBF4229B865A300A5891B /* selectortramps.mac */,
+			);
+			path = Trace;
+			sourceTree = "<group>";
+		};
+		87DDBF4329B865A300A5891B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF4429B865A300A5891B /* LLDBTools.h */,
+				87DDBF4629B865A300A5891B /* LLDBTools.mm */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		87DDBF4829B865A300A5891B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF4929B865A300A5891B /* WSIpaHookToolDylib-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87DDBF4A29B865A300A5891B /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF4B29B865A300A5891B /* AntiAntiDebug.m */,
+			);
+			path = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		87DDBF4D29B865A300A5891B /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				87DDBF4E29B865A300A5891B /* fishhook.c */,
+				87DDBF5029B865A300A5891B /* fishhook.h */,
+			);
+			path = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87DDBF0C29B865A200A5891B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDBF2429B865A200A5891B /* MDCycriptManager.h in Headers */,
+				87DDBF5329B865A300A5891B /* WSIpaHookToolDylib.h in Headers */,
+				87DDBF2829B865A200A5891B /* MDMethodTrace.h in Headers */,
+				87DDBF5129B865A300A5891B /* fishhook.h in Headers */,
+				87DDBF4529B865A300A5891B /* LLDBTools.h in Headers */,
+				87DDBF2029B865A200A5891B /* MDConfigManager.h in Headers */,
+				87DDBF3F29B865A200A5891B /* OCSelectorTrampolines.h in Headers */,
+				87DDBF3B29B865A200A5891B /* OCMethodTrace.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		87DDBEFC29B865A200A5891B /* WSIpaHookTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DDBF5B29B865A300A5891B /* Build configuration list for PBXNativeTarget "WSIpaHookTool" */;
+			buildPhases = (
+				C6426544D29FEB8401DD59E7 /* [CP] Check Pods Manifest.lock */,
+				87DDBEF629B865A200A5891B /* Sources */,
+				87DDBEF729B865A200A5891B /* Frameworks */,
+				87DDBEF829B865A200A5891B /* ShellScript */,
+				87DDBEF929B865A200A5891B /* Resources */,
+				87DDBEFA29B865A200A5891B /* CopyFiles */,
+				87DDBEFB29B865A200A5891B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87DDBF1129B865A200A5891B /* PBXTargetDependency */,
+			);
+			name = WSIpaHookTool;
+			productName = WSIpaHookTool;
+			productReference = 87DDBEFD29B865A200A5891B /* WSIpaHookTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87DDBF0D29B865A200A5891B /* WSIpaHookToolDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87DDBF5829B865A300A5891B /* Build configuration list for PBXNativeTarget "WSIpaHookToolDylib" */;
+			buildPhases = (
+				638F7E8128ACE17EDB89FAD2 /* [CP] Check Pods Manifest.lock */,
+				87DDBF0929B865A200A5891B /* ShellScript */,
+				87DDBF0A29B865A200A5891B /* Sources */,
+				87DDBF0B29B865A200A5891B /* Frameworks */,
+				87DDBF0C29B865A200A5891B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WSIpaHookToolDylib;
+			productName = WSIpaHookToolDylib;
+			productReference = 87DDBF0E29B865A200A5891B /* libWSIpaHookToolDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87DDBEF229B865A200A5891B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					87DDBEFC29B865A200A5891B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					87DDBF0D29B865A200A5891B = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 87DDBEF529B865A200A5891B /* Build configuration list for PBXProject "WSIpaHookTool" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87DDBEF129B865A200A5891B;
+			productRefGroup = 87DDBEFE29B865A200A5891B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87DDBEFC29B865A200A5891B /* WSIpaHookTool */,
+				87DDBF0D29B865A200A5891B /* WSIpaHookToolDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87DDBEF929B865A200A5891B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDBF0529B865A200A5891B /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		638F7E8128ACE17EDB89FAD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSIpaHookToolDylib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87DDBEF829B865A200A5891B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/WSIpaManager/Tools/pack.sh\necho \"lujing == ${PROJECT_DIR}\"\n";
+		};
+		87DDBEFB29B865A200A5891B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/WSIpaManager/Tools/pack.sh codesign\n";
+		};
+		87DDBF0929B865A200A5891B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PROJECT_DIR}/WSIpaManager/bin/md --xcbp-logos\n";
+		};
+		C6426544D29FEB8401DD59E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WSIpaHookTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87DDBEF629B865A200A5891B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87DDBF0A29B865A200A5891B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87DDBF2629B865A200A5891B /* MDCycriptManager.m in Sources */,
+				87DDBF2F29B865A200A5891B /* a1a2-selectortramps-arm64.s in Sources */,
+				87DDBF2D29B865A200A5891B /* a1a2-selectortramps-arm.s in Sources */,
+				87DDBF3329B865A200A5891B /* a1a2-selectortramps-x86_64.s in Sources */,
+				87DDBF3D29B865A200A5891B /* OCMethodTrace.m in Sources */,
+				87DDBF2229B865A200A5891B /* MDConfigManager.m in Sources */,
+				87DDBF4F29B865A300A5891B /* fishhook.c in Sources */,
+				87DDBF4C29B865A300A5891B /* AntiAntiDebug.m in Sources */,
+				87DDBF5529B865A300A5891B /* WSIpaHookToolDylib.m in Sources */,
+				87DDBF4129B865A300A5891B /* OCSelectorTrampolines.mm in Sources */,
+				87DDBF3129B865A200A5891B /* a1a2-selectortramps-i386.s in Sources */,
+				87DDBF3729B865A200A5891B /* a2a3-selectortramps-i386.s in Sources */,
+				87DDBF3529B865A200A5891B /* a2a3-selectortramps-arm.s in Sources */,
+				87DDBF1D29B865A200A5891B /* WSIpaHookToolDylib.mm in Sources */,
+				87DDBF4729B865A300A5891B /* LLDBTools.mm in Sources */,
+				87DDBF3929B865A200A5891B /* a2a3-selectortramps-x86_64.s in Sources */,
+				87DDBF2A29B865A200A5891B /* MDMethodTrace.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87DDBF1129B865A200A5891B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87DDBF0D29B865A200A5891B /* WSIpaHookToolDylib */;
+			targetProxy = 87DDBF1029B865A200A5891B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		87DDBF5629B865A300A5891B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		87DDBF5729B865A300A5891B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87DDBF5929B865A300A5891B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2D6036319821E78E8214127 /* Pods-WSIpaHookToolDylib.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X6MRC3DRYX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WSIpaHookToolDylib/WSIpaHookToolDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(PROJECT_DIR)/WSIpaManager/theos",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWSIpaHookToolDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = "${PROJECT_DIR}/WSIpaManager";
+				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/theos";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WSIpaHookToolDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		87DDBF5A29B865A300A5891B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3569E2DDCE187C9A283CB4 /* Pods-WSIpaHookToolDylib.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = X6MRC3DRYX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WSIpaHookToolDylib/WSIpaHookToolDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+					"$(PROJECT_DIR)/WSIpaManager/theos",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libWSIpaHookToolDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = "${PROJECT_DIR}/WSIpaManager";
+				MonkeyDevTheosPath = "${PROJECT_DIR}/WSIpaManager/theos";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"WSIpaHookToolDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87DDBF5C29B865A300A5891B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 916B26AA35FA5DF2359A057F /* Pods-WSIpaHookTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6MRC3DRYX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSIpaHookToolDylib/theos/vendor/lib",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSIpaHookToolDylib/theos/vendor/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.molier.WSIpaHookTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87DDBF5D29B865A300A5891B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F21C54BD30842A3CD756CF1 /* Pods-WSIpaHookTool.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X6MRC3DRYX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSIpaHookToolDylib/theos/vendor/lib",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WSIpaHookToolDylib/theos/vendor/lib",
+				);
+				MARKETING_VERSION = 1.0;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.molier.WSIpaHookTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87DDBEF529B865A200A5891B /* Build configuration list for PBXProject "WSIpaHookTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DDBF5629B865A300A5891B /* Debug */,
+				87DDBF5729B865A300A5891B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DDBF5829B865A300A5891B /* Build configuration list for PBXNativeTarget "WSIpaHookToolDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DDBF5929B865A300A5891B /* Debug */,
+				87DDBF5A29B865A300A5891B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87DDBF5B29B865A300A5891B /* Build configuration list for PBXNativeTarget "WSIpaHookTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DDBF5C29B865A300A5891B /* Debug */,
+				87DDBF5D29B865A300A5891B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87DDBEF229B865A200A5891B /* Project object */;
+}
