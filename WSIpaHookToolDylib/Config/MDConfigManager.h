@@ -1,10 +1,10 @@
 //
 //
 //  MDConfigManager.h
-//  MonkeyDev
+//  Molier
 //
-//  Created by AloneMonkey on 2018/4/24.
-//  Copyright © 2018年 AloneMonkey. All rights reserved.
+//  Created by Molier on 2018/4/24.
+//  Copyright © 2023年 Molier. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		33DBAE55ACBA37EA8A97B78D /* libPods-WSIpaHookToolDylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B34A8BFC0D1010B33333DA8A /* libPods-WSIpaHookToolDylib.a */; };
 		4863B17A90099361A8754D54 /* libPods-WSIpaHookTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F75666F48C09540285E2E79 /* libPods-WSIpaHookTool.a */; };
+		87B506A229BC702A001AE9B7 /* HookClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B506A029BC702A001AE9B7 /* HookClass.h */; };
+		87B506A329BC702A001AE9B7 /* HookClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B506A129BC702A001AE9B7 /* HookClass.m */; };
 		87DDBF0529B865A200A5891B /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87DDBF0429B865A200A5891B /* MDConfig.plist */; };
 		87DDBF0F29B865A200A5891B /* libWSIpaHookToolDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 87DDBF0E29B865A200A5891B /* libWSIpaHookToolDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		87DDBF1429B865A200A5891B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87DDBF1329B865A200A5891B /* JavaScriptCore.framework */; };
@@ -66,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		7F21C54BD30842A3CD756CF1 /* Pods-WSIpaHookTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WSIpaHookTool.release.xcconfig"; path = "Target Support Files/Pods-WSIpaHookTool/Pods-WSIpaHookTool.release.xcconfig"; sourceTree = "<group>"; };
+		87B506A029BC702A001AE9B7 /* HookClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HookClass.h; sourceTree = "<group>"; };
+		87B506A129BC702A001AE9B7 /* HookClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HookClass.m; sourceTree = "<group>"; };
 		87DDBEFD29B865A200A5891B /* WSIpaHookTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WSIpaHookTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DDBF0029B865A200A5891B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		87DDBF0229B865A200A5891B /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "quick-resign.sh"; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 			children = (
 				87DDBF5229B865A300A5891B /* WSIpaHookToolDylib.h */,
 				87DDBF5429B865A300A5891B /* WSIpaHookToolDylib.m */,
+				87B506A029BC702A001AE9B7 /* HookClass.h */,
+				87B506A129BC702A001AE9B7 /* HookClass.m */,
 				87DDBF1A29B865A200A5891B /* Logos */,
 				87DDBF1E29B865A200A5891B /* Config */,
 				87DDBF2B29B865A200A5891B /* Trace */,
@@ -317,6 +323,7 @@
 				87DDBF2029B865A200A5891B /* MDConfigManager.h in Headers */,
 				87DDBF3F29B865A200A5891B /* OCSelectorTrampolines.h in Headers */,
 				87DDBF3B29B865A200A5891B /* OCMethodTrace.h in Headers */,
+				87B506A229BC702A001AE9B7 /* HookClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +539,7 @@
 				87DDBF5529B865A300A5891B /* WSIpaHookToolDylib.m in Sources */,
 				87DDBF4129B865A300A5891B /* OCSelectorTrampolines.mm in Sources */,
 				87DDBF3129B865A200A5891B /* a1a2-selectortramps-i386.s in Sources */,
+				87B506A329BC702A001AE9B7 /* HookClass.m in Sources */,
 				87DDBF3729B865A200A5891B /* a2a3-selectortramps-i386.s in Sources */,
 				87DDBF3529B865A200A5891B /* a2a3-selectortramps-arm.s in Sources */,
 				87DDBF1D29B865A200A5891B /* WSIpaHookToolDylib.mm in Sources */,

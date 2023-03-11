@@ -9,7 +9,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define INSERT_SUCCESS_WELCOME "               🎉!!！congratulations!!！🎉\n👍----------------insert dylib success----------------👍\n"
+#define INJECT_SUCCESS "🎉🎉自定义动态库注入成功，可以开始二次开发🎉🎉"
 
 @interface CustomViewController
 

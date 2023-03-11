@@ -1,10 +1,10 @@
 //
 //
 //  AntiAntiDebug.m
-//  MonkeyDev
+//  Molier
 //
-//  Created by AloneMonkey on 2016/12/10.
-//  Copyright © 2017年 MonkeyDev. All rights reserved.
+//  Created by Molier on 2023/3/8.
+//  Copyright © 2023年 Molier. All rights reserved.
 //
 
 #if TARGET_OS_SIMULATOR
