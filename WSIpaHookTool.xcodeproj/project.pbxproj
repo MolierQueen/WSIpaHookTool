@@ -456,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PROJECT_DIR}/WSIpaManager/Tools/pack.sh\necho \"lujing == ${PROJECT_DIR}\"\n";
+			shellScript = "${PROJECT_DIR}/WSIpaManager/Tools/pack.sh\n";
 		};
 		87DDBEFB29B865A200A5891B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
